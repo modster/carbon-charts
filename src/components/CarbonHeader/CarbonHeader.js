@@ -31,11 +31,17 @@ const CarbonHeader = () => (
           isActive={isSideNavExpanded}
         />
         <HeaderName element={Link} to="/" prefix="IBM">
-          Carbon design-system
+          Carbon Design System
         </HeaderName>
         <HeaderNavigation aria-label="Carbon Design System">
           <HeaderMenuItem element={Link} to="/repos">
             Repositories
+          </HeaderMenuItem>
+          <HeaderMenuItem element={Link} to="/charts">
+            Carbon Charts
+          </HeaderMenuItem>
+          <HeaderMenuItem element={Link} to="/d3fc">
+            D3Fc
           </HeaderMenuItem>
         </HeaderNavigation>
         <SideNav
@@ -46,6 +52,12 @@ const CarbonHeader = () => (
             <HeaderSideNavItems>
               <HeaderMenuItem element={Link} to="/repos">
                 Repositories
+              </HeaderMenuItem>
+              <HeaderMenuItem element={Link} to="/charts">
+                Carbon Charts
+              </HeaderMenuItem>
+              <HeaderMenuItem element={Link} to="/d3fc">
+                D3Fc
               </HeaderMenuItem>
             </HeaderSideNavItems>
           </SideNavItems>
